@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header h2{
+  font-family: 'Montserrat', serif;
+}
+
+#header {
+    text-align: center;
+    position: sticky;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* justify-content: space-between; */
+    align-items: center; 
+    padding: 1rem;
+  }
+  
+  #nav-bar a {
+    text-align: left;
+    display: inline;
+    font-size: medium;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: maroon;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .cover {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    /* padding: 2em; */
+    background-image: url("cover2.jpg");
+    color: mintcream;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120px;
+  }
+
+  .cover p{
+    margin: 12% 15%;
+    text-align: center;
+    text-shadow: 2px 2px lightslategray;
+    background-color:rgb(39, 38, 38, 0.6);
+  }
+
+  #newModels h1{
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+  }
+
+  .cover h1{
+    text-align: left;
+    background-color: maroon;
+  }
+  
+  .left-cont {
+    /* background-color: lightblue; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 90vh;
+  }
+
+  .left-cont img {
+    width: 80%;
+    height: 80%;
+    margin: 2em 3em;
+    display: inline;
+    transform:rotateX(180);
+  }
+  
+  .right-cont {
+    /* background-color: yellow; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5% 0;
+    height: 90vh;
+  }
+
+  section {
+    margin: 2rem;
+  }
+
+  section h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+    /* background-color: maroon; */
+    color: maroon;
+    padding: 1rem 0;
+  }
+
+  .shopBtn{
+    color: white;
+    background-color: maroon;
+    padding: 10px;
+    margin-top: 500px;
+  }
+
+  #newModels {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    height: 90vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+  }
+
+  #newModels h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+  }
+
+  #newModelsCarousel {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* grid-template-rows: auto auto; */
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;;
+  }
+
+  .newModel {
+    text-align: center;
+  }
+
+  #contact{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1em;
+  }
+
+  #contact h3{
+    font-family: 'Montserrat', serif;
+  }
+
+  input {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 1em;
+  }
+  
+  button {
+    padding: 5px;
+    color: whitesmoke;
+    background-color: maroon;
+    border-radius: 25%;
+  }
+
+  footer {
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media only screen and (max-width: 900px){
+    .content {
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+    .left-cont {
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+  }
+  
+  .right-cont {
+    /* background-color: yellow; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  .video {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  video {
+   margin: 2% 35%;
+  }
+  
+  .form {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align:center;
+  }
+  }
