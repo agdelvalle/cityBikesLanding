@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Sample Product Page</title>
 <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,19 +11,21 @@
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
+<!-- main content -->
+    <div class="content">
+<!-- header and nav -->
     <div id="header">
       <img src="assets/bicycle.png" width="50" height="55" alt="placeholder" id="header-img">
       <h2>City Bikes<h2>
       <nav id="nav-bar">
-        <a href="#header" class="nav-link">Home</a> |
+        <a href="#cover" class="nav-link">Home</a> |
         <a href="#about" class="nav-link">About</a> |
+        <a href="#newModels" class="nav-link">New Models</a> |
         <a href="#contact" class="nav-link">Contact Us</a>
       </nav>
     </div>
-<!-- main content -->
-    <div class="content">
 <!-- cover -->
-      <div class="cover">
+      <div class="cover" id="cover">
         <p>Cruise the city in style</p>
       </div>
 <!-- left and right -->
@@ -49,32 +52,32 @@
         <h1>Our Newest Models</h1>
         <div id="newModelsCarousel">
           <div class="newModel">
-            <img src="https://via.placeholder.com/150" alt="">
+            <img src="assets/newbike1.jpg" alt="">
             <header>New Model 1</header>
             <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio ea sit blanditiis sunt.</section>
             <span class="shopBtn">Shop Now</span>
           </div>
           <div class="newModel">
-            <img src="https://via.placeholder.com/150" alt="">
-            <header>New Model 1</header>
+            <img src="assets/newbike2.jpg" alt="">
+            <header>New Model 2</header>
             <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio ea sit blanditiis sunt.</section>
             <span class="shopBtn">Shop Now</span>
           </div>
           <div class="newModel">
-            <img src="https://via.placeholder.com/150" alt="">
-            <header>New Model 1</header>
+            <img src="assets/newbike3.jpg" alt="">
+            <header>New Model 3</header>
             <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio ea sit blanditiis sunt.</section>
             <span class="shopBtn">Shop Now</span>
           </div>
           <div class="newModel">
-            <img src="https://via.placeholder.com/150" alt="">
-            <header>New Model 1</header>
+            <img src="assets/newbike4.jpg" alt="">
+            <header>New Model 4</header>
             <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio ea sit blanditiis sunt.</section>
             <span class="shopBtn">Shop Now</span>
           </div>
           <div class="newModel">
-            <img src="https://via.placeholder.com/150" alt="">
-            <header>New Model 1</header>
+            <img src="assets/newbike5.jpg" alt="">
+            <header>New Model 5</header>
             <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio ea sit blanditiis sunt.</section>
             <span class="shopBtn">Shop Now</span>
           </div>
@@ -82,14 +85,20 @@
       </div>
 <!-- contact us form -->
       <div class="form" id="contact">
-        <h3>Contact Us</h3>
-        <form action="" id="form">
-          <label for="name"></label>
-          <input type="text" placeholder="Full Name">
-          <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Email">
-          <button type="submit" id="submit" formtarget="http://www.freecodecamp.com/email-submit">Submit</button>
-        </form>
+        <div class="formCont">
+          <h3>Contact Us</h3>
+          <form action="" id="form">
+            <label for="name"></label>
+            <input type="text" placeholder="Full Name" id="name">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="message"></label>
+            <input type="text" id="msg" name="msg" placeholder="Type your message here">
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Keep me subscribed to the monthly newsletter</label>
+            <button type="submit" id="submit" formtarget="http://www.freecodecamp.com/email-submit">Submit</button>
+          </form>
+        </div>
       </div>
 <!-- footer -->
       <footer>
